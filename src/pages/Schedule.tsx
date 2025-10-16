@@ -204,8 +204,8 @@ function Schedule({ onNavigate }: ScheduleProps) {
       <footer className="relative z-10 border-t border-cyan-500/20 bg-gray-900/50 backdrop-blur-xl mt-20">
         <div className="max-w-7xl mx-auto px-6 py-8">
           <div className="text-center text-gray-400">
-            <p>© 2024 ACM Student Chapter. All rights reserved.</p>
-            <p className="mt-2 text-sm">Questions? Contact us at events@acm.org</p>
+            <p>© 2025 ACM Student Chapter. All rights reserved.</p>
+            <p className="mt-2 text-sm">Questions? Contact us at acm.usdchapter@gmail.com</p>
           </div>
         </div>
       </footer>

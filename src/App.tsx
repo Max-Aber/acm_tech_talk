@@ -88,22 +88,22 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
           <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-lg border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all duration-300 hover:scale-105">
             <Calendar className="w-10 h-10 text-cyan-400 mb-4" />
             <h3 className="text-lg font-semibold mb-2">Date & Time</h3>
-            <p className="text-gray-400">Friday, November 15, 2024</p>
-            <p className="text-gray-400">6:00 PM - 8:30 PM EST</p>
+            <p className="text-gray-400">Saturday, November 22, 2025</p>
+            <p className="text-gray-400">10:00 AM - 8:00 PM</p>
           </div>
 
           <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-lg border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all duration-300 hover:scale-105">
             <MapPin className="w-10 h-10 text-cyan-400 mb-4" />
             <h3 className="text-lg font-semibold mb-2">Location</h3>
-            <p className="text-gray-400">Engineering Building, Room 301</p>
+            <p className="text-gray-400">UC Forum ABC</p>
             <p className="text-gray-400">Main Campus</p>
           </div>
 
           <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-lg border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all duration-300 hover:scale-105">
             <Users className="w-10 h-10 text-cyan-400 mb-4" />
             <h3 className="text-lg font-semibold mb-2">Capacity</h3>
-            <p className="text-gray-400">Limited to 150 attendees</p>
-            <p className="text-cyan-400 font-medium">85 spots remaining</p>
+            <p className="text-gray-400">Limited to 200 attendees</p>
+            <p className="text-cyan-400 font-medium">185 spots remaining</p>
           </div>
         </div>
 

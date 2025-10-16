@@ -78,7 +78,7 @@ function RSVP({ onNavigate }: RSVPProps) {
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-1">Date</h3>
-                <p className="text-gray-400">Friday, November 15, 2024</p>
+                <p className="text-gray-400">Saturday, November 22, 2025</p>
               </div>
             </div>
 
@@ -88,7 +88,7 @@ function RSVP({ onNavigate }: RSVPProps) {
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-1">Time</h3>
-                <p className="text-gray-400">6:00 PM - 8:30 PM EST</p>
+                <p className="text-gray-400">10:00 AM - 8:00 PM</p>
               </div>
             </div>
 
@@ -98,7 +98,7 @@ function RSVP({ onNavigate }: RSVPProps) {
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-1">Location</h3>
-                <p className="text-gray-400">Engineering Building, Room 301</p>
+                <p className="text-gray-400">UC Forum ABC</p>
                 <p className="text-gray-400">Main Campus</p>
               </div>
             </div>
@@ -161,7 +161,7 @@ function RSVP({ onNavigate }: RSVPProps) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="mailto:events@acm.org"
+              href="mailto:acm.usdchapter@gmail.com"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gray-800/50 border border-cyan-500/20 rounded-lg hover:border-cyan-400/40 transition-colors text-white font-medium"
             >
               Email Us
@@ -179,8 +179,8 @@ function RSVP({ onNavigate }: RSVPProps) {
       <footer className="relative z-10 border-t border-cyan-500/20 bg-gray-900/50 backdrop-blur-xl mt-20">
         <div className="max-w-7xl mx-auto px-6 py-8">
           <div className="text-center text-gray-400">
-            <p>© 2024 ACM Student Chapter. All rights reserved.</p>
-            <p className="mt-2 text-sm">Questions? Contact us at events@acm.org</p>
+            <p>© 2025 ACM USD. All rights reserved.</p>
+            <p className="mt-2 text-sm">Questions? Contact us at acm.usdchapter@gmail.com</p>
           </div>
         </div>
       </footer>
