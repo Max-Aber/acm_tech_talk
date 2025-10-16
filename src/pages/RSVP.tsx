@@ -16,8 +16,8 @@ function RSVP({ onNavigate }: RSVPProps) {
       <nav className="relative z-10 border-b border-cyan-500/20 bg-gray-900/50 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <img src={acmLogo} alt="ACM USD Logo" className="w-8 h-8" />
+            <div className="flex items-center gap-3">
+              <img src={acmLogo} alt="ACM USD Logo" className="w-16 h-16" />
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
                 ACM Events
               </span>
@@ -112,7 +112,7 @@ function RSVP({ onNavigate }: RSVPProps) {
             </p>
 
             <a
-              href="https://forms.gle/example-rsvp-link"
+              href="https://forms.gle/zSdMSTRqJQPd3SZXA"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl text-lg font-semibold hover:from-cyan-400 hover:to-blue-400 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(6,182,212,0.4)]"

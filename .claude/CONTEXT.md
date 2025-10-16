@@ -24,6 +24,8 @@ acm_tech_talk/
 │   └── prompt               # Design guidelines for UI/UX
 ├── .claude/
 │   └── CONTEXT.md          # This file - project context for LLMs
+├── public/
+│   └── favicon.png         # ACM USD logo used as favicon
 ├── src/
 │   ├── App.tsx             # Main app component with routing logic
 │   ├── main.tsx            # React entry point
@@ -318,11 +320,12 @@ npm run typecheck     # TypeScript type checking without emitting files
 - Created this CONTEXT.md file for future LLM sessions
 
 ### 2025-10-16 (Session 2)
-- Updated website favicon to ACM USD logo (ACM_USD_logo_transparent.png)
+- Updated website favicon to ACM USD logo (created public/favicon.png)
 - Replaced Sparkles icon with ACM USD logo in navigation headers across all pages
 - Added ACM USD logo to src/images/ directory
 - Updated all page components (App.tsx, Schedule.tsx, RSVP.tsx) to use logo image instead of icon
-- Logo displays at 32x32px (w-8 h-8) in navigation bar
+- Logo displays at 64x64px (w-16 h-16) in navigation bar
+- Created public directory for static assets (favicon)
 
 ---
 
