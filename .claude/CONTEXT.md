@@ -29,6 +29,8 @@ acm_tech_talk/
 │   ├── main.tsx            # React entry point
 │   ├── index.css           # Global styles with Tailwind directives
 │   ├── vite-env.d.ts       # Vite type definitions
+│   ├── images/
+│   │   └── ACM_USD_logo_transparent.png  # ACM USD chapter logo
 │   └── pages/
 │       ├── Schedule.tsx    # Event schedule/timeline page
 │       └── RSVP.tsx        # Registration page
@@ -315,8 +317,15 @@ npm run typecheck     # TypeScript type checking without emitting files
 - Created initial commit (3eda5be)
 - Created this CONTEXT.md file for future LLM sessions
 
+### 2025-10-16 (Session 2)
+- Updated website favicon to ACM USD logo (ACM_USD_logo_transparent.png)
+- Replaced Sparkles icon with ACM USD logo in navigation headers across all pages
+- Added ACM USD logo to src/images/ directory
+- Updated all page components (App.tsx, Schedule.tsx, RSVP.tsx) to use logo image instead of icon
+- Logo displays at 32x32px (w-8 h-8) in navigation bar
+
 ---
 
-**Last Updated:** October 16, 2025 (Session 1)
-**Project Status:** UI Complete, Backend/Integration Pending
+**Last Updated:** October 16, 2025 (Session 2)
+**Project Status:** UI Complete with Branding Updates, Backend/Integration Pending
 **Next Session Priority:** Implement real registration system and Supabase integration
