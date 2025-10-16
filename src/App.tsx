@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Calendar, MapPin, Users, Clock, Sparkles, ChevronRight } from 'lucide-react';
 import Schedule from './pages/Schedule';
 import RSVP from './pages/RSVP';
@@ -8,14 +8,27 @@ type Page = 'home' | 'schedule' | 'rsvp';
 function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
 
+  const handleNavigate = (page: Page) => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Small delay to allow smooth scroll to start before page change
+    setTimeout(() => {
+      setCurrentPage(page);
+    }, 100);
+  };
+
+  // Scroll to top when page changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [currentPage]);
+
   const renderPage = () => {
     switch (currentPage) {
       case 'schedule':
-        return <Schedule onNavigate={setCurrentPage} />;
+        return <Schedule onNavigate={handleNavigate} />;
       case 'rsvp':
-        return <RSVP onNavigate={setCurrentPage} />;
+        return <RSVP onNavigate={handleNavigate} />;
       default:
-        return <HomePage onNavigate={setCurrentPage} />;
+        return <HomePage onNavigate={handleNavigate} />;
     }
   };
 
