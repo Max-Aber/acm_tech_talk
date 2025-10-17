@@ -48,7 +48,7 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
             <div className="flex items-center gap-3">
               <img src={acmLogo} alt="ACM USD Logo" className="w-16 h-16" />
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-                ACM Events
+                Events
               </span>
             </div>
             <div className="flex gap-6">
@@ -94,7 +94,7 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
           </h1>
 
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Join us for an exclusive insight into the rapidly evolving world of artificial intelligence and discover the pathways to launching your career in this transformative field
+            Explore how professionals are integrating AI into their work, building successful AI startups, and using hackathons as launchpads for innovation.
           </p>
         </div>
 
@@ -127,10 +127,10 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
           </h2>
           <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
             <p>
-              The AI revolution is here, and the opportunities are limitless. Whether you're a student exploring career options, a developer looking to transition into AI, or simply curious about the field, this tech talk will provide you with the insights and connections you need to succeed.
+              The AI revolution is here, and the opportunities are limitless. Whether you're a student exploring career options, a developer looking into AI, or simply curious about the field, this tech talk will provide you with the insights and connections you need to succeed.
             </p>
             <p>
-              Our distinguished panel of industry experts from leading tech companies will share their journeys, discuss current trends in AI development, and provide actionable advice on breaking into this exciting field. From machine learning engineering to AI research, product management to AI ethics, we'll cover the full spectrum of career paths available.
+              Our distinguished panel of industry experts from leading tech companies will share their journeys, discuss current trends in AI, and provide advice on breaking into this exciting field. From AI ethics to vibe coding, product management to startups, we'll cover the full spectrum of career paths available.
             </p>
             <p>
               This isn't just another lecture - it's an interactive experience. You'll have the opportunity to ask questions, network with professionals, and connect with fellow attendees who share your passion for AI technology.
@@ -148,33 +148,9 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
                 <ChevronRight className="w-5 h-5 text-cyan-400" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Essential Skills & Technologies</h3>
-                <p className="text-gray-400">
-                  Discover the programming languages, frameworks, and tools that AI professionals use daily, and learn which skills to prioritize in your learning journey.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-cyan-500/20 border border-cyan-500/30 rounded-lg flex items-center justify-center">
-                <ChevronRight className="w-5 h-5 text-cyan-400" />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Career Pathways</h3>
-                <p className="text-gray-400">
-                  Explore diverse roles in AI - from research scientist to ML engineer, data scientist to AI product manager - and find the path that aligns with your interests.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-cyan-500/20 border border-cyan-500/30 rounded-lg flex items-center justify-center">
-                <ChevronRight className="w-5 h-5 text-cyan-400" />
-              </div>
-              <div>
                 <h3 className="text-xl font-semibold mb-2">Industry Insights</h3>
                 <p className="text-gray-400">
-                  Hear firsthand stories from professionals working at the forefront of AI innovation, including challenges they've faced and how they overcame them.
+                  Explore how artificial intelligence is being applied across industries and how professionals are adapting to its rapid growth in the workplace.
                 </p>
               </div>
             </div>
@@ -184,9 +160,33 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
                 <ChevronRight className="w-5 h-5 text-cyan-400" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Networking Opportunities</h3>
+                <h3 className="text-xl font-semibold mb-2">From Idea to AI Startup</h3>
                 <p className="text-gray-400">
-                  Connect with industry professionals, meet potential mentors, and build relationships with peers who share your passion for AI technology.
+                  Hear from founders about the journey of turning an AI concept into a successful startup, from identifying a need to developing real-world solutions.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-8 h-8 bg-cyan-500/20 border border-cyan-500/30 rounded-lg flex items-center justify-center">
+                <ChevronRight className="w-5 h-5 text-cyan-400" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Hands-On Innovation</h3>
+                <p className="text-gray-400">
+                  Collaborate in the Create-A-Thon hackathon to design and present creative projects that bring AI ideas to life through teamwork and problem-solving.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-8 h-8 bg-cyan-500/20 border border-cyan-500/30 rounded-lg flex items-center justify-center">
+                <ChevronRight className="w-5 h-5 text-cyan-400" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Career Growth in AI</h3>
+                <p className="text-gray-400">
+                  Learn how to begin your career in AI through mentorship, networking, and exposure to professionals shaping the future of technology.
                 </p>
               </div>
             </div>
