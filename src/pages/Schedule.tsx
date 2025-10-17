@@ -20,14 +20,14 @@ function Schedule({ onNavigate }: ScheduleProps) {
       time: '9:45 AM - 10:20 AM',
       title: 'Check-In',
       location: 'UC Foyer',
-      description: 'Check in table open all day, Demo areas for AI models around the room - (Daisy.so, Hip Clip, Court-Date, Boodle.AI)',
+      description: 'Check in table open all day, Demo areas for AI models around the room - (Daisy.so, Hip Clip, Court-Date, Boodle.AI).',
       type: 'arrival'
     },
     {
       time: '10:20 AM - 10:30 AM',
       title: 'Welcome Introduction',
       location: 'UC Forum A',
-      description: 'Intro by ACM',
+      description: 'Introduction of the event by ACM.',
       type: 'intro'
     },
     {
@@ -256,7 +256,7 @@ function Schedule({ onNavigate }: ScheduleProps) {
             <li className="flex items-start gap-3">
               <div className="flex-shrink-0 w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
               <span>
-                <strong className="text-white">Prepare to Connect:</strong> Be ready to talk and connect with peers! Have your LinkedIn profile ready for the networking reception.
+                <strong className="text-white">Prepare to Connect:</strong> Be ready to talk and connect with peers! Have your LinkedIn profile ready.
               </span>
             </li>
             <li className="flex items-start gap-3">
