@@ -19,7 +19,7 @@ function RSVP({ onNavigate }: RSVPProps) {
             <div className="flex items-center gap-3">
               <img src={acmLogo} alt="ACM USD Logo" className="w-16 h-16" />
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-                ACM Events
+                Events
               </span>
             </div>
             <div className="flex gap-6">
@@ -99,7 +99,7 @@ function RSVP({ onNavigate }: RSVPProps) {
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-1">Location</h3>
-                <p className="text-gray-400">UC Forum ABC</p>
+                <p className="text-gray-400">University of San Diego, UC Forum ABC</p>
                 <p className="text-gray-400">Main Campus</p>
               </div>
             </div>
