@@ -31,18 +31,11 @@ function Schedule({ onNavigate }: ScheduleProps) {
       type: 'intro'
     },
     {
-      time: '10:30 AM - 11:15 AM',
+      time: '10:30 AM - 11:30 AM',
       title: 'Tech Talk Panel #1 with AI Industry Professionals',
       location: 'UC Forum A',
-      description: 'Panel 1 with Industry',
-      type: 'panel'
-    },
-    {
-      time: '11:15 AM - 11:30 AM',
-      title: 'Q&A',
-      location: 'UC Forum A',
-      description: 'Session with the industry professionals. Submit questions online.',
-      type: 'interactive'
+      description: 'Panel 1 with Industry professionals, including a Q&A session.',
+      type: 'panel and interactive'
     },
     {
       time: '11:30 AM - 12:30 PM',
@@ -52,18 +45,11 @@ function Schedule({ onNavigate }: ScheduleProps) {
       type: 'networking'
     },
     {
-      time: '12:30 PM - 1:15 PM',
+      time: '12:30 PM - 1:30 PM',
       title: 'Tech Talk #2 with AI Company Founders',
       location: 'UC Forum A',
-      description: 'Panel 2 with AI company founders',
-      type: 'panel'
-    },
-    {
-      time: '1:15 PM - 1:30 PM',
-      title: 'Q&A',
-      location: 'UC Forum A',
-      description: 'Session with company founders. Submit questions online.',
-      type: 'interactive'
+      description: 'Panel 2 with AI company founders, including a Q&A session.',
+      type: 'panel and interactive'
     },
     {
       time: '1:30 PM - 1:45 PM',
@@ -81,9 +67,9 @@ function Schedule({ onNavigate }: ScheduleProps) {
     },
     {
       time: '2:30 PM - 3:15 PM',
-      title: 'Daisy Workshop/Live Demo',
+      title: 'Daisy Workshop | Live Demo',
       location: 'UC Forum B',
-      description: 'Required for Create-A-Thon participants',
+      description: 'Learn how to use Daisy. Required for Create-A-Thon participants',
       type: 'workshop'
     },
     {
@@ -104,21 +90,21 @@ function Schedule({ onNavigate }: ScheduleProps) {
       time: '5:30 PM - 6:15 PM',
       title: 'Team Presentations | Break | Networking',
       location: 'UC Forum C | UC Forum A',
-      description: '',
+      description: 'Teams present their product to the judges. There is time for networking/break while judges deliberate.',
       type: 'presentations'
     },
     {
       time: '5:45 PM',
       title: 'Dinner is served',
       location: 'UC Forum A',
-      description: '',
+      description: 'Enjoy dinner with fellow attendees.',
       type: 'networking'
     },
     {
       time: '6:30 PM - 7:30 PM',
       title: 'Award Ceremony Dinner and Closing Remarks',
       location: 'UC Forum A',
-      description: 'Winners announced, congratulations to all participants!',
+      description: 'Winners are announced, congratulations to all participants!',
       type: 'awards'
     }
   ];
@@ -159,7 +145,7 @@ function Schedule({ onNavigate }: ScheduleProps) {
             <div className="flex items-center gap-3">
               <img src={acmLogo} alt="ACM USD Logo" className="w-16 h-16" />
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-                ACM Events
+                Events
               </span>
             </div>
             <div className="flex gap-6">
@@ -258,25 +244,25 @@ function Schedule({ onNavigate }: ScheduleProps) {
             <li className="flex items-start gap-3">
               <div className="flex-shrink-0 w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
               <span>
-                <strong className="text-white">Arrive Early:</strong> We recommend arriving 10-15 minutes before the start time to allow for registration and seating.
+                <strong className="text-white">Arrive On Time:</strong> We recommend arriving 10-15 minutes before the start time to allow for registration and seating.
               </span>
             </li>
             <li className="flex items-start gap-3">
               <div className="flex-shrink-0 w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
               <span>
-                <strong className="text-white">Bring Questions:</strong> Prepare thoughtful questions for the Q&A session to make the most of this opportunity.
+                <strong className="text-white">Bring Questions:</strong> Think of thoughtful questions for the Q&A session to make the most of this opportunity.
               </span>
             </li>
             <li className="flex items-start gap-3">
               <div className="flex-shrink-0 w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
               <span>
-                <strong className="text-white">Business Cards:</strong> Bring business cards or have your LinkedIn profile ready for the networking reception.
+                <strong className="text-white">Prepare to Connect:</strong> Be ready to talk and connect with peers! Have your LinkedIn profile ready for the networking reception.
               </span>
             </li>
             <li className="flex items-start gap-3">
               <div className="flex-shrink-0 w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
               <span>
-                <strong className="text-white">Refreshments:</strong> Light snacks and beverages will be provided throughout the event.
+                <strong className="text-white">Refreshments and Food:</strong> Light snacks, beverages, and food will be provided throughout the event.
               </span>
             </li>
           </ul>
