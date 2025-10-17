@@ -244,7 +244,7 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
             <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
           <p className="mt-4 text-gray-400">
-            Don't miss this opportunity to accelerate your AI career
+            Don't miss this opportunity to accelerate your AI career + get free tokens and access codes!
           </p>
         </div>
       </main>

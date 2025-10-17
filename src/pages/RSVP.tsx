@@ -146,11 +146,7 @@ function RSVP({ onNavigate }: RSVPProps) {
             </li>
             <li className="flex items-start gap-3">
               <div className="flex-shrink-0 w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
-              <span>Event materials and resources</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <div className="flex-shrink-0 w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
-              <span>Certificate of attendance</span>
+              <span>Free Tokens and access codes for AI tools</span>
             </li>
           </ul>
         </div>
