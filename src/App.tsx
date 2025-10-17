@@ -205,8 +205,7 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Expert Panel Discussion</h3>
                 <p className="text-gray-400">
-                  Featuring senior engineers and researchers from top AI companies including Google DeepMind, OpenAI, and leading AI startups.
-                </p>
+                  Engage with AI industry professionals and startup founders as they share insights about careers, innovation, and real-world applications of AI. Each session includes a Q&A so you can ask your own questions.                </p>
               </div>
             </div>
 
@@ -215,9 +214,9 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
                 <Clock className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Interactive Q&A Session</h3>
+                <h3 className="text-xl font-semibold mb-2">Interactive Workshops & Demos</h3>
                 <p className="text-gray-400">
-                  Get your burning questions answered directly by industry professionals. No question is too basic or too advanced.
+                  Get hands-on experience with AI tools and projects through live demos and workshops. Learn practical skills and see concepts in action.
                 </p>
               </div>
             </div>
@@ -227,9 +226,9 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
                 <Users className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Networking Reception</h3>
+                <h3 className="text-xl font-semibold mb-2">Create-A-Thon Hackathon</h3>
                 <p className="text-gray-400">
-                  Enjoy refreshments while connecting with speakers, sponsors, and fellow attendees in an informal setting after the main presentation.
+                  Collaborate with peers to design and present innovative AI products. Experience the full cycle of problem-solving, teamwork, and presentation, culminating in a showcase judged by industry professionals.
                 </p>
               </div>
             </div>
