@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react';
 import { Calendar, MapPin, Users, Clock, Sparkles, ChevronRight } from 'lucide-react';
 import Schedule from './pages/Schedule';
 import RSVP from './pages/RSVP';
+import Hackathon from './pages/Hackathon';
 import acmLogo from './images/ACM_USD_logo_transparent.png';
 
-type Page = 'home' | 'schedule' | 'rsvp';
+type Page = 'home' | 'schedule' | 'rsvp' | 'hackathon';
 
 function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
@@ -28,6 +29,8 @@ function App() {
         return <Schedule onNavigate={handleNavigate} />;
       case 'rsvp':
         return <RSVP onNavigate={handleNavigate} />;
+      case 'hackathon':
+        return <Hackathon onNavigate={handleNavigate} />;
       default:
         return <HomePage onNavigate={handleNavigate} />;
     }
@@ -63,6 +66,12 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
                 className="text-gray-400 hover:text-cyan-300 transition-colors font-medium"
               >
                 Schedule
+              </button>
+              <button
+                onClick={() => onNavigate('hackathon')}
+                className="text-gray-400 hover:text-cyan-300 transition-colors font-medium"
+              >
+                Hackathon
               </button>
               <button
                 onClick={() => onNavigate('rsvp')}

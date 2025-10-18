@@ -1,7 +1,7 @@
 import { Sparkles, ArrowLeft, ExternalLink, Calendar, MapPin, Clock } from 'lucide-react';
 import acmLogo from '../images/ACM_USD_logo_transparent.png';
 
-type Page = 'home' | 'schedule' | 'rsvp';
+type Page = 'home' | 'schedule' | 'rsvp' | 'hackathon';
 
 interface RSVPProps {
   onNavigate: (page: Page) => void;
@@ -34,6 +34,12 @@ function RSVP({ onNavigate }: RSVPProps) {
                 className="text-gray-400 hover:text-cyan-300 transition-colors font-medium"
               >
                 Schedule
+              </button>
+              <button
+                onClick={() => onNavigate('hackathon')}
+                className="text-gray-400 hover:text-cyan-300 transition-colors font-medium"
+              >
+                Hackathon
               </button>
               <button
                 onClick={() => onNavigate('rsvp')}
@@ -123,6 +129,68 @@ function RSVP({ onNavigate }: RSVPProps) {
 
             <p className="mt-4 text-sm text-gray-500">
               You'll be redirected to our registration form
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-gradient-to-br from-pink-900/30 to-purple-900/30 backdrop-blur-lg border border-pink-500/30 rounded-3xl p-10 mb-8">
+          <div className="border-b border-pink-500/20 pb-6 mb-8">
+            <div className="inline-block mb-4 px-4 py-2 bg-pink-500/10 border border-pink-500/30 rounded-full">
+              <span className="text-pink-400 text-sm font-medium">CREATE-A-THON HACKATHON</span>
+            </div>
+            <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+              Register for the Hackathon
+            </h2>
+            <p className="text-gray-300 text-lg">
+              Join the Create-A-Thon and collaborate with peers to design innovative AI products. Teams of 2-5 people will compete to build and present their projects to industry judges.
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-2 h-2 bg-pink-400 rounded-full mt-2"></div>
+              <div>
+                <h3 className="text-lg font-semibold mb-1 text-white">Separate Registration Required</h3>
+                <p className="text-gray-300">
+                  Hackathon registration is separate from event registration. Limited spots available!
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-2 h-2 bg-pink-400 rounded-full mt-2"></div>
+              <div>
+                <h3 className="text-lg font-semibold mb-1 text-white">Workshop Attendance Mandatory</h3>
+                <p className="text-gray-300">
+                  All hackathon participants must attend the Vibe Coding (1:45-2:30 PM) and Daisy (2:30-3:15 PM) workshops.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-2 h-2 bg-pink-400 rounded-full mt-2"></div>
+              <div>
+                <h3 className="text-lg font-semibold mb-1 text-white">2-Hour Hacking Period</h3>
+                <p className="text-gray-300">
+                  Teams will have from 3:30 PM to 5:30 PM to build their AI product and prepare presentations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 pt-8 border-t border-pink-500/20">
+            <a
+              href="https://forms.gle/zSdMSTRqJQPd3SZXA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-pink-500 to-purple-500 rounded-xl text-lg font-semibold hover:from-pink-400 hover:to-purple-400 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(236,72,153,0.4)]"
+            >
+              <span>Sign Up for Hackathon</span>
+              <ExternalLink className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            </a>
+
+            <p className="mt-4 text-sm text-gray-400">
+              You'll be redirected to our hackathon registration form
             </p>
           </div>
         </div>

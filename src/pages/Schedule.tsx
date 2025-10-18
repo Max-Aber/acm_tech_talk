@@ -1,7 +1,7 @@
 import { Clock, Sparkles, ArrowLeft, MapPin } from 'lucide-react';
 import acmLogo from '../images/ACM_USD_logo_transparent.png';
 
-type Page = 'home' | 'schedule' | 'rsvp';
+type Page = 'home' | 'schedule' | 'rsvp' | 'hackathon';
 
 interface ScheduleProps {
   onNavigate: (page: Page) => void;
@@ -160,6 +160,12 @@ function Schedule({ onNavigate }: ScheduleProps) {
                 className="text-cyan-400 hover:text-cyan-300 transition-colors font-medium"
               >
                 Schedule
+              </button>
+              <button
+                onClick={() => onNavigate('hackathon')}
+                className="text-gray-400 hover:text-cyan-300 transition-colors font-medium"
+              >
+                Hackathon
               </button>
               <button
                 onClick={() => onNavigate('rsvp')}
