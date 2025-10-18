@@ -142,7 +142,7 @@ function RSVP({ onNavigate }: RSVPProps) {
               Register for the Hackathon
             </h2>
             <p className="text-gray-300 text-lg">
-              Join the Create-A-Thon and collaborate with peers to design innovative AI products. Teams of 2-5 people will compete to build and present their projects to industry judges.
+              Join the Create-A-Thon and collaborate with peers to design innovative AI products. Teams of 4-5 people will compete to build and present their projects to industry judges.
             </p>
           </div>
 

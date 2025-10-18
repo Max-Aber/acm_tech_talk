@@ -81,22 +81,22 @@ function Hackathon({ onNavigate }: HackathonProps) {
           <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-lg border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all duration-300 hover:scale-105">
             <Clock className="w-10 h-10 text-cyan-400 mb-4" />
             <h3 className="text-lg font-semibold mb-2">Duration</h3>
-            <p className="text-gray-400">3:30 PM - 5:30 PM</p>
-            <p className="text-gray-400">2 hours of hacking time</p>
+            <p className="text-gray-400">3:30 PM - 7:30 PM</p>
+            <p className="text-gray-400">Hacking and presentation time</p>
           </div>
 
           <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-lg border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all duration-300 hover:scale-105">
             <MapPin className="w-10 h-10 text-cyan-400 mb-4" />
             <h3 className="text-lg font-semibold mb-2">Location</h3>
-            <p className="text-gray-400">UC Forum B</p>
             <p className="text-gray-400">University of San Diego</p>
+            <p className="text-gray-400">UC Forum ABC</p>
           </div>
 
           <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-lg border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all duration-300 hover:scale-105">
             <Users className="w-10 h-10 text-cyan-400 mb-4" />
             <h3 className="text-lg font-semibold mb-2">Team Size</h3>
-            <p className="text-gray-400">2-5 members per team</p>
-            <p className="text-cyan-400 font-medium">Form teams on-site</p>
+            <p className="text-gray-400">4-5 members per team</p>
+            <p className="text-cyan-400 font-medium">You don’t need a team to sign up.</p>
           </div>
         </div>
 
@@ -106,7 +106,7 @@ function Hackathon({ onNavigate }: HackathonProps) {
           </h2>
           <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
             <p>
-              The Create-A-Thon is a collaborative hackathon where teams of 2-5 people work together to design and build innovative AI-powered products. This isn't about writing perfect code - it's about creativity, teamwork, and bringing ideas to life.
+              The Create-A-Thon is a collaborative hackathon where teams of 4-5 people work together to design and build innovative AI-powered products. This isn't about writing perfect code - it's about creativity, teamwork, and bringing ideas to life.
             </p>
             <p>
               Before the hackathon begins, you'll participate in required workshops on Vibe Coding and Daisy.so to learn the tools you'll use. At 3:30 PM, we'll release the prompt, and your team will have 2 hours to create something amazing.
@@ -208,7 +208,7 @@ function Hackathon({ onNavigate }: HackathonProps) {
               <div>
                 <h3 className="text-xl font-semibold mb-2">3:15 PM - 3:30 PM: Team Formation</h3>
                 <p className="text-gray-400">
-                  Form teams of 2-5 people. The hackathon prompt will be released at 3:30 PM sharp.
+                  Form teams of 4-5 people. The hackathon prompt will be released at 3:30 PM sharp.
                 </p>
               </div>
             </div>
@@ -220,7 +220,7 @@ function Hackathon({ onNavigate }: HackathonProps) {
               <div>
                 <h3 className="text-xl font-semibold mb-2">3:30 PM - 5:30 PM: Hack Time!</h3>
                 <p className="text-gray-400">
-                  Two hours of intensive team collaboration to build your AI product. Mentors will be available to help.
+                  Two hours of intensive team collaboration to build your AI product.
                 </p>
               </div>
             </div>
