@@ -102,7 +102,7 @@ function Schedule({ onNavigate }: ScheduleProps) {
     },
     {
       time: '6:30 PM - 7:30 PM',
-      title: 'Award Ceremony Dinner and Closing Remarks',
+      title: 'Award Ceremony and Closing Remarks',
       location: 'UC Forum A',
       description: 'Winners are announced, congratulations to all participants!',
       type: 'awards'

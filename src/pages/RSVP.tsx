@@ -89,7 +89,7 @@ function RSVP({ onNavigate }: RSVPProps) {
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-1">Time</h3>
-                <p className="text-gray-400">10:00 AM - 8:00 PM</p>
+                <p className="text-gray-400">10:00 AM - 7:30 PM</p>
               </div>
             </div>
 
@@ -99,8 +99,8 @@ function RSVP({ onNavigate }: RSVPProps) {
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-1">Location</h3>
-                <p className="text-gray-400">University of San Diego, UC Forum ABC</p>
-                <p className="text-gray-400">Main Campus</p>
+                <p className="text-gray-400">University of San Diego</p>
+                <p className="text-gray-400">UC Forum ABC</p>
               </div>
             </div>
           </div>

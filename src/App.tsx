@@ -103,14 +103,14 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
             <Calendar className="w-10 h-10 text-cyan-400 mb-4" />
             <h3 className="text-lg font-semibold mb-2">Date & Time</h3>
             <p className="text-gray-400">Saturday, November 22, 2025</p>
-            <p className="text-gray-400">10:00 AM - 8:00 PM</p>
+            <p className="text-gray-400">10:00 AM - 7:30 PM</p>
           </div>
 
           <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-lg border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all duration-300 hover:scale-105">
             <MapPin className="w-10 h-10 text-cyan-400 mb-4" />
             <h3 className="text-lg font-semibold mb-2">Location</h3>
-            <p className="text-gray-400">University of San Diego, UC Forum ABC</p>
-            <p className="text-gray-400">Main Campus</p>
+            <p className="text-gray-400">University of San Diego</p>
+            <p className="text-gray-400">UC Forum ABC</p>
           </div>
 
           <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-lg border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all duration-300 hover:scale-105">
