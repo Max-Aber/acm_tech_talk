@@ -255,6 +255,19 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
           <p className="mt-4 text-gray-400">
             Don't miss this opportunity to accelerate your AI career + get free tokens and access codes!
           </p>
+
+          <div className="mt-8">
+            <button
+              onClick={() => onNavigate('hackathon')}
+              className="group relative inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-pink-500 to-purple-500 rounded-xl text-lg font-semibold hover:from-pink-400 hover:to-purple-400 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(236,72,153,0.4)]"
+            >
+              <span>Learn About the Hackathon</span>
+              <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </button>
+            <p className="mt-4 text-gray-400">
+              Join the Create-A-Thon and compete for prizes!
+            </p>
+          </div>
         </div>
       </main>
 

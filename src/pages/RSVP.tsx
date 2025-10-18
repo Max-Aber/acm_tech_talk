@@ -77,6 +77,30 @@ function RSVP({ onNavigate }: RSVPProps) {
           </p>
         </div>
 
+        <div className="bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-lg border border-cyan-500/20 rounded-3xl p-10 mb-8">
+          <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+            What's Included
+          </h2>
+          <ul className="space-y-4 text-gray-300">
+            <li className="flex items-start gap-3">
+              <div className="flex-shrink-0 w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
+              <span>Access to all panel discussions and presentations</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <div className="flex-shrink-0 w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
+              <span>Interactive Q&A session with industry experts</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <div className="flex-shrink-0 w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
+              <span>Networking reception with refreshments</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <div className="flex-shrink-0 w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
+              <span>Free Tokens and access codes for AI tools</span>
+            </li>
+          </ul>
+        </div>
+
         <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-lg border border-cyan-500/20 rounded-3xl p-10 mb-8">
           <div className="space-y-6 mb-8">
             <div className="flex items-start gap-4">
@@ -135,9 +159,12 @@ function RSVP({ onNavigate }: RSVPProps) {
 
         <div className="bg-gradient-to-br from-pink-900/30 to-purple-900/30 backdrop-blur-lg border border-pink-500/30 rounded-3xl p-10 mb-8">
           <div className="border-b border-pink-500/20 pb-6 mb-8">
-            <div className="inline-block mb-4 px-4 py-2 bg-pink-500/10 border border-pink-500/30 rounded-full">
-              <span className="text-pink-400 text-sm font-medium">CREATE-A-THON HACKATHON</span>
-            </div>
+            <button
+              onClick={() => onNavigate('hackathon')}
+              className="inline-block mb-4 px-4 py-2 bg-pink-500/10 border border-pink-500/30 rounded-full hover:bg-pink-500/20 hover:border-pink-500/50 transition-all duration-300 cursor-pointer"
+            >
+              <span className="text-pink-400 text-sm font-medium">CREATE-A-THON HACKATHON →</span>
+            </button>
             <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
               Register for the Hackathon
             </h2>
@@ -193,30 +220,6 @@ function RSVP({ onNavigate }: RSVPProps) {
               You'll be redirected to our hackathon registration form
             </p>
           </div>
-        </div>
-
-        <div className="bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-lg border border-cyan-500/20 rounded-3xl p-10 mb-8">
-          <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-            What's Included
-          </h2>
-          <ul className="space-y-4 text-gray-300">
-            <li className="flex items-start gap-3">
-              <div className="flex-shrink-0 w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
-              <span>Access to all panel discussions and presentations</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <div className="flex-shrink-0 w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
-              <span>Interactive Q&A session with industry experts</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <div className="flex-shrink-0 w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
-              <span>Networking reception with refreshments</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <div className="flex-shrink-0 w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
-              <span>Free Tokens and access codes for AI tools</span>
-            </li>
-          </ul>
         </div>
 
         <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 backdrop-blur-lg border border-cyan-500/30 rounded-3xl p-10">

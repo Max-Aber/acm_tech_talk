@@ -117,57 +117,64 @@ function Hackathon({ onNavigate }: HackathonProps) {
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-lg border border-cyan-500/20 rounded-3xl p-12 mb-12">
-          <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-            What You'll Experience
+        <div className="bg-gradient-to-br from-yellow-900/20 to-amber-900/20 backdrop-blur-lg border border-yellow-500/30 rounded-3xl p-12 mb-12">
+          <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent">
+            Prizes & Recognition
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-cyan-500/20 border border-cyan-500/30 rounded-lg flex items-center justify-center">
-                <Lightbulb className="w-5 h-5 text-cyan-400" />
+          <p className="text-gray-300 text-lg mb-8">
+            Compete for amazing prizes and recognition from industry professionals!
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gradient-to-br from-yellow-500/10 to-amber-500/10 border border-yellow-500/30 rounded-2xl p-8">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-yellow-500 to-amber-500 rounded-full flex items-center justify-center">
+                  <Trophy className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-yellow-400">1st Place</h3>
+                  <p className="text-gray-400">Winner Team</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Creative Problem-Solving</h3>
-                <p className="text-gray-400">
-                  Work with your team to ideate, design, and build an AI product from scratch in just 2 hours.
-                </p>
-              </div>
+              <ul className="space-y-3 text-gray-300">
+                <li className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 bg-yellow-400 rounded-full mt-2"></div>
+                  <span><strong className="text-white">$100 per team member</strong></span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 bg-yellow-400 rounded-full mt-2"></div>
+                  <span><strong className="text-white">Winner Diplomas</strong> for each team member</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 bg-yellow-400 rounded-full mt-2"></div>
+                  <span>Recognition from industry professionals</span>
+                </li>
+              </ul>
             </div>
 
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-cyan-500/20 border border-cyan-500/30 rounded-lg flex items-center justify-center">
-                <Code className="w-5 h-5 text-cyan-400" />
+            <div className="bg-gradient-to-br from-gray-500/10 to-slate-500/10 border border-gray-500/30 rounded-2xl p-8">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-gray-400 to-slate-400 rounded-full flex items-center justify-center">
+                  <Trophy className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-300">2nd Place</h3>
+                  <p className="text-gray-400">Runner-Up Team</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Hands-On AI Development</h3>
-                <p className="text-gray-400">
-                  Use cutting-edge AI tools like Daisy.so and vibe coding techniques to rapidly prototype your ideas.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-cyan-500/20 border border-cyan-500/30 rounded-lg flex items-center justify-center">
-                <Users className="w-5 h-5 text-cyan-400" />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Team Collaboration</h3>
-                <p className="text-gray-400">
-                  Experience real-world team dynamics as you collaborate, delegate tasks, and build together.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-4">
-              <div className="flex-shrink-0 w-8 h-8 bg-cyan-500/20 border border-cyan-500/30 rounded-lg flex items-center justify-center">
-                <Trophy className="w-5 h-5 text-cyan-400" />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Present to Professionals</h3>
-                <p className="text-gray-400">
-                  Pitch your product to industry judges and get valuable feedback on your work and presentation skills.
-                </p>
-              </div>
+              <ul className="space-y-3 text-gray-300">
+                <li className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 bg-gray-400 rounded-full mt-2"></div>
+                  <span><strong className="text-white">$50 per team member</strong></span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 bg-gray-400 rounded-full mt-2"></div>
+                  <span><strong className="text-white">Winner Diplomas</strong> for each team member</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-2 h-2 bg-gray-400 rounded-full mt-2"></div>
+                  <span>Recognition from industry professionals</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

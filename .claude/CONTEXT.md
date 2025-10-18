@@ -35,6 +35,7 @@ acm_tech_talk/
 │   │   └── ACM_USD_logo_transparent.png  # ACM USD chapter logo
 │   └── pages/
 │       ├── Schedule.tsx    # Event schedule/timeline page
+│       ├── Hackathon.tsx   # Create-A-Thon hackathon information page
 │       └── RSVP.tsx        # Registration page
 ├── index.html              # HTML entry point
 ├── package.json            # Project dependencies
@@ -51,7 +52,7 @@ acm_tech_talk/
 
 ## What This Application Does
 
-The website is a **three-page SPA** with client-side routing that provides information about an ACM event:
+The website is a **four-page SPA** with client-side routing that provides information about an ACM event:
 
 ### 1. **Home Page** (`App.tsx` - HomePage component)
 - Hero section with animated gradient text
@@ -63,26 +64,36 @@ The website is a **three-page SPA** with client-side routing that provides infor
 
 **Event Details:**
 - **Title:** ACM Tech Talk: Breaking Into AI Industry
-- **Date:** Friday, November 15, 2024
-- **Time:** 6:00 PM - 8:30 PM EST
-- **Location:** Engineering Building, Room 301, Main Campus
-- **Capacity:** 150 attendees (85 spots remaining - hardcoded)
+- **Date:** Saturday, November 22, 2025
+- **Time:** 10:00 AM - 7:30 PM
+- **Location:** University of San Diego, UC Forum ABC
+- **Capacity:** 200 attendees (185 spots remaining - hardcoded)
 
 ### 2. **Schedule Page** (`src/pages/Schedule.tsx`)
-- Visual timeline with 6 scheduled segments:
-  - 6:00-6:15 PM: Registration & Welcome
-  - 6:15-6:30 PM: Opening Remarks
-  - 6:30-7:15 PM: Panel Discussion
-  - 7:15-7:45 PM: Interactive Q&A
-  - 7:45-8:00 PM: Lightning Talks
-  - 8:00-8:30 PM: Networking Reception
-- Color-coded time blocks for different activity types
+- Visual timeline with 14 scheduled segments from 9:45 AM to 7:30 PM:
+  - Morning: Doors open, check-in, welcome, tech talk panel #1
+  - Afternoon: Lunch/networking, tech talk #2, workshops (Vibe Coding, Daisy)
+  - Evening: Hackathon (3:30-5:30 PM), presentations, dinner, awards ceremony
+- Color-coded time blocks for different activity types (arrival, panel, interactive, workshop, hackathon, presentations, awards, networking)
+- Location details for each segment (UC Forum A, B, C, UC Foyer)
 - Important notes section with event tips
 
-### 3. **RSVP Page** (`src/pages/RSVP.tsx`)
+### 3. **Hackathon Page** (`src/pages/Hackathon.tsx`)
+- Dedicated page for the Create-A-Thon hackathon
+- Duration, location, and team size information (4-5 members per team)
+- "About the Create-A-Thon" section explaining the collaborative hackathon format
+- "What You'll Experience" grid with creative problem-solving, AI development, team collaboration, and presentation opportunities
+- Detailed hackathon timeline from workshops through awards
+- Important information section covering registration requirements, mandatory workshops, and prizes
+- Call-to-action button redirecting to RSVP page
+
+### 4. **RSVP Page** (`src/pages/RSVP.tsx`)
 - Event details summary (date, time, location)
-- External registration link (currently placeholder: `https://forms.gle/example-rsvp-link`)
-- "What's Included" list (5 items)
+- Main event registration section with external link (`https://forms.gle/zSdMSTRqJQPd3SZXA`)
+- **Separate hackathon registration section** with pink/purple theme to differentiate from main event
+  - Hackathon-specific information (team size 4-5, mandatory workshops, 2-hour hacking period)
+  - Separate registration link for hackathon participants
+- "What's Included" list (access to panels, Q&A, networking, free tokens/access codes)
 - Help section with contact options
 
 **Navigation:** Simple client-side state-based routing using React useState hook. No router library used.
@@ -97,12 +108,13 @@ Per `.bolt/prompt`:
 **Design Characteristics:**
 - Dark theme with gradient backgrounds (gray-900, slate-900, gray-950)
 - Cyan/blue accent colors throughout (cyan-400, cyan-500, blue-400, blue-500)
+- Pink/purple accent colors for hackathon-specific sections (pink-400, pink-500, purple-400, purple-500)
 - Glass morphism effects (backdrop-blur, semi-transparent backgrounds)
 - Animated gradients on text
 - Hover effects with scale transformations and glow shadows
 - Grid pattern overlay for texture
 - Radial gradient overlays for depth
-- Consistent navigation bar across all pages
+- Consistent navigation bar across all pages with ACM USD logo
 - Lucide React icons for all iconography
 - Responsive design (mobile-first with md: breakpoints)
 
@@ -113,14 +125,15 @@ Per `.bolt/prompt`:
 ### Routing System
 - No external routing library used
 - State-based navigation using `useState<Page>('home')`
-- Type-safe page navigation with TypeScript union type: `type Page = 'home' | 'schedule' | 'rsvp'`
+- Type-safe page navigation with TypeScript union type: `type Page = 'home' | 'schedule' | 'rsvp' | 'hackathon'`
 - Navigation handled via `onNavigate` callback prop passed to child components
 
 ### Component Architecture
 - **App.tsx**: Main container with routing logic
 - **HomePage**: Inline component within App.tsx
 - **Schedule**: Separate page component
-- **RSVP**: Separate page component
+- **Hackathon**: Separate page component for Create-A-Thon information
+- **RSVP**: Separate page component with both event and hackathon registration
 - All pages include consistent navigation header and footer
 
 ### Styling Approach
@@ -131,7 +144,7 @@ Per `.bolt/prompt`:
 
 ### Icons
 - All icons from `lucide-react` package
-- Common icons used: Calendar, MapPin, Users, Clock, Sparkles, ChevronRight, ArrowLeft, ExternalLink
+- Common icons used: Calendar, MapPin, Users, Clock, Sparkles, ChevronRight, ArrowLeft, ExternalLink, Code, Trophy, Lightbulb
 
 ---
 
@@ -140,31 +153,33 @@ Per `.bolt/prompt`:
 ### Completed Features
 - ✅ Full UI/UX design implementation
 - ✅ Home page with comprehensive event information
-- ✅ Schedule page with detailed timeline
-- ✅ RSVP page with registration flow
+- ✅ Schedule page with detailed full-day timeline (9:45 AM - 7:30 PM)
+- ✅ Hackathon page with Create-A-Thon details and timeline
+- ✅ RSVP page with separate registration sections for event and hackathon
 - ✅ Responsive design for mobile and desktop
-- ✅ Navigation system between pages
+- ✅ Navigation system between all four pages
 - ✅ Project setup with Vite + React + TypeScript
 - ✅ Tailwind CSS configuration
 - ✅ ESLint configuration
-- ✅ Git repository initialized with initial commit
+- ✅ Git repository initialized and pushed to GitHub
 
 ### Pending/Incomplete Features
-- ⚠️ **RSVP registration link is placeholder** - needs real Google Form or registration system
+- ⚠️ **Registration links use Google Forms** - currently pointing to `https://forms.gle/zSdMSTRqJQPd3SZXA`
 - ⚠️ **Supabase integration not implemented** - package installed but not used
 - ⚠️ **No backend/database connection** - all data is hardcoded
-- ⚠️ **Capacity counter is static** - "85 spots remaining" is hardcoded, not dynamic
+- ⚠️ **Capacity counter is static** - "185 spots remaining" is hardcoded, not dynamic
 - ⚠️ **No form validation or submission logic**
 - ⚠️ **No analytics or tracking**
-- ⚠️ **Email links are placeholder** - events@acm.org may not be real
+- ⚠️ **Contact email** - acm.usdchapter@gmail.com
 
 ### Known Issues/Limitations
 - No actual data persistence
 - No admin panel to manage event details
 - No attendee management system
-- Event date is hardcoded (November 15, 2024) - may need updating
+- Event details are hardcoded (date: November 22, 2025)
 - No authentication system
 - No email notifications
+- Hackathon and main event use same registration link (may need separate forms)
 
 ---
 
@@ -287,25 +302,27 @@ npm run typecheck     # TypeScript type checking without emitting files
 
 1. **Don't install unnecessary packages** - The project uses minimal dependencies by design. Lucide React provides all needed icons. Tailwind handles all styling.
 
-2. **Maintain design consistency** - The cyan/blue gradient theme with dark backgrounds is intentional. Don't introduce new color schemes without explicit request.
+2. **Maintain design consistency** - The cyan/blue gradient theme with dark backgrounds is intentional. Pink/purple gradients are used specifically for hackathon sections. Don't introduce new color schemes without explicit request.
 
 3. **Windows environment quirks** - If encountering npm script issues, remember to use `./node_modules/.bin/vite` or `--ignore-scripts` flag.
 
-4. **No routing library needed** - The simple state-based navigation works well for this three-page app. Don't add React Router unless the app grows significantly.
+4. **No routing library needed** - The simple state-based navigation works well for this four-page app. Don't add React Router unless the app grows significantly.
 
 5. **Supabase is configured but unused** - The package is installed but not implemented. If implementing backend features, start with Supabase client configuration.
 
-6. **Placeholder data** - Remember that event dates, capacity numbers, and registration links are all hardcoded placeholders.
+6. **Hardcoded data** - Event dates, capacity numbers, and registration links are all hardcoded. Event is scheduled for November 22, 2025.
 
 7. **Production-ready design** - The UI is already polished and production-worthy. Focus development efforts on backend functionality and dynamic data management.
+
+8. **Hackathon integration** - The hackathon (Create-A-Thon) is a key component of the event, running from 3:30-5:30 PM with mandatory workshops beforehand.
 
 ---
 
 ## Contact and Resources
 
-**Mock Contact:** events@acm.org (placeholder)
-**Event Organization:** ACM Student Chapter
-**Repository:** Local only (not pushed to remote)
+**Contact Email:** acm.usdchapter@gmail.com
+**Event Organization:** ACM USD Student Chapter
+**Repository:** GitHub (https://github.com/Max-Aber/acm_tech_talk)
 
 ---
 
@@ -327,8 +344,20 @@ npm run typecheck     # TypeScript type checking without emitting files
 - Logo displays at 64x64px (w-16 h-16) in navigation bar
 - Created public directory for static assets (favicon)
 
+### 2025-10-18 (Session 3)
+- Created new Hackathon page (Hackathon.tsx) with Create-A-Thon details
+- Updated routing system to include 'hackathon' in Page type union
+- Added Hackathon navigation link to all page headers (Home, Schedule, RSVP, Hackathon)
+- Added separate hackathon registration section to RSVP page with pink/purple theme
+- Included hackathon timeline, team formation details (4-5 members), and workshop requirements
+- Updated event details across all pages (date: November 22, 2025, location: UC Forum ABC)
+- Updated schedule with full-day timeline (9:45 AM - 7:30 PM) including workshops and hackathon
+- Team size adjusted to 4-5 members per team
+- Committed and pushed changes to GitHub (commit: e9638fc)
+- Updated CONTEXT.md to reflect four-page structure and new features
+
 ---
 
-**Last Updated:** October 16, 2025 (Session 2)
-**Project Status:** UI Complete with Branding Updates, Backend/Integration Pending
-**Next Session Priority:** Implement real registration system and Supabase integration
+**Last Updated:** October 18, 2025 (Session 3)
+**Project Status:** Four-page UI complete with hackathon integration, Backend/Integration Pending
+**Next Session Priority:** Implement separate registration forms for event and hackathon, consider Supabase integration
