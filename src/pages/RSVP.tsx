@@ -187,7 +187,7 @@ function RSVP({ onNavigate }: RSVPProps) {
             <div className="flex items-center gap-2 text-gray-300">
               <Clock className="w-5 h-5 text-pink-400" />
               <span className="font-semibold">Time:</span>
-              <span>1:45 PM - 7:30 PM</span>
+              <span>3:30 PM - 7:30 PM</span>
             </div>
           </div>
 
