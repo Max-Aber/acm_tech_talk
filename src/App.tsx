@@ -112,7 +112,7 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
             <Calendar className="w-10 h-10 text-cyan-400 mb-4" />
             <h3 className="text-lg font-semibold mb-2">Date & Time</h3>
             <p className="text-gray-400">Saturday, November 22, 2025</p>
-            <p className="text-gray-400">10:00 AM - 7:30 PM</p>
+            <p className="text-gray-400">10:00 AM - 3:30 PM</p>
           </div>
 
           <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-lg border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all duration-300 hover:scale-105">
@@ -125,8 +125,8 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
           <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-lg border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all duration-300 hover:scale-105">
             <Users className="w-10 h-10 text-cyan-400 mb-4" />
             <h3 className="text-lg font-semibold mb-2">Capacity</h3>
-            <p className="text-gray-400">Limited to 200 attendees</p>
-            <p className="text-cyan-400 font-medium">185 spots remaining</p>
+            <p className="text-gray-400">Limited to 100 attendees</p>
+            <p className="text-cyan-400 font-medium">85 spots remaining</p>
           </div>
         </div>
 
@@ -237,7 +237,7 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Create-A-Thon Hackathon</h3>
                 <p className="text-gray-400">
-                  Collaborate with peers to design and present innovative AI products. Experience the full cycle of problem-solving, teamwork, and presentation, culminating in a showcase judged by industry professionals.
+                  Collaborate with peers to design and present innovative AI products. Experience the full cycle of problem-solving, teamwork, and presentation, culminating in a showcase judged by industry professionals. Winners receive prizes.
                 </p>
               </div>
             </div>
@@ -265,7 +265,7 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             <p className="mt-4 text-gray-400">
-              Join the Create-A-Thon and compete for prizes!
+              Join the Hackathon and compete for prizes!
             </p>
           </div>
         </div>
