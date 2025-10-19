@@ -60,7 +60,9 @@ The website is a **four-page SPA** with client-side routing that provides inform
 - "About This Event" section explaining the event purpose
 - "What You'll Learn" grid showing 4 key learning outcomes
 - "Event Highlights" featuring expert panel, Q&A, and networking
-- Call-to-action button to RSVP
+- **Two call-to-action buttons at bottom:**
+  - "Reserve Your Spot" (cyan/blue) - navigates to RSVP page
+  - "Learn About the Hackathon" (pink/purple) - navigates to Hackathon page
 
 **Event Details:**
 - **Title:** ACM Tech Talk: Breaking Into AI Industry
@@ -82,18 +84,21 @@ The website is a **four-page SPA** with client-side routing that provides inform
 - Dedicated page for the Create-A-Thon hackathon
 - Duration, location, and team size information (4-5 members per team)
 - "About the Create-A-Thon" section explaining the collaborative hackathon format
-- "What You'll Experience" grid with creative problem-solving, AI development, team collaboration, and presentation opportunities
+- **Prizes & Recognition section** with yellow/gold theme:
+  - 1st Place: $100 per team member + Winner Diplomas + Recognition
+  - 2nd Place: $50 per team member + Winner Diplomas + Recognition
 - Detailed hackathon timeline from workshops through awards
 - Important information section covering registration requirements, mandatory workshops, and prizes
 - Call-to-action button redirecting to RSVP page
 
 ### 4. **RSVP Page** (`src/pages/RSVP.tsx`)
 - Event details summary (date, time, location)
+- **"What's Included" section** positioned at top (below "Join Us" header) showing event benefits
 - Main event registration section with external link (`https://forms.gle/zSdMSTRqJQPd3SZXA`)
 - **Separate hackathon registration section** with pink/purple theme to differentiate from main event
+  - **Clickable "CREATE-A-THON HACKATHON" badge** that navigates to Hackathon page
   - Hackathon-specific information (team size 4-5, mandatory workshops, 2-hour hacking period)
   - Separate registration link for hackathon participants
-- "What's Included" list (access to panels, Q&A, networking, free tokens/access codes)
 - Help section with contact options
 
 **Navigation:** Simple client-side state-based routing using React useState hook. No router library used.
@@ -109,6 +114,7 @@ Per `.bolt/prompt`:
 - Dark theme with gradient backgrounds (gray-900, slate-900, gray-950)
 - Cyan/blue accent colors throughout (cyan-400, cyan-500, blue-400, blue-500)
 - Pink/purple accent colors for hackathon-specific sections (pink-400, pink-500, purple-400, purple-500)
+- Yellow/gold accent colors for prizes section (yellow-400, amber-400, yellow-500, amber-500)
 - Glass morphism effects (backdrop-blur, semi-transparent backgrounds)
 - Animated gradients on text
 - Hover effects with scale transformations and glow shadows
@@ -356,8 +362,20 @@ npm run typecheck     # TypeScript type checking without emitting files
 - Committed and pushed changes to GitHub (commit: e9638fc)
 - Updated CONTEXT.md to reflect four-page structure and new features
 
+### 2025-10-18 (Session 3 - UX Improvements)
+- Made "CREATE-A-THON HACKATHON" badge clickable on RSVP page to navigate to Hackathon page
+- Reorganized RSVP page: moved "What's Included" section to top (below "Join Us" header)
+- Added "Learn About the Hackathon" button to home page bottom (pink/purple themed)
+- Added comprehensive Prizes & Recognition section to Hackathon page:
+  - 1st Place: $100 per team member + diplomas + recognition
+  - 2nd Place: $50 per team member + diplomas + recognition
+  - Yellow/gold color scheme for prizes section
+- Removed "What You'll Experience" section from Hackathon page (streamlined content)
+- Committed and pushed changes to GitHub (commit: 04496c4)
+- Updated CONTEXT.md with latest UX improvements
+
 ---
 
-**Last Updated:** October 18, 2025 (Session 3)
-**Project Status:** Four-page UI complete with hackathon integration, Backend/Integration Pending
+**Last Updated:** October 18, 2025 (Session 3 - UX Improvements)
+**Project Status:** Four-page UI complete with hackathon integration, prizes section, and improved navigation flow
 **Next Session Priority:** Implement separate registration forms for event and hackathon, consider Supabase integration
