@@ -119,7 +119,7 @@ function RSVP({ onNavigate }: RSVPProps) {
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-1">Time</h3>
-                <p className="text-gray-400">10:00 AM - 7:30 PM</p>
+                <p className="text-gray-400">10:00 AM - 3:30 PM</p>
               </div>
             </div>
 
@@ -163,13 +163,13 @@ function RSVP({ onNavigate }: RSVPProps) {
               onClick={() => onNavigate('hackathon')}
               className="inline-block mb-4 px-4 py-2 bg-pink-500/10 border border-pink-500/30 rounded-full hover:bg-pink-500/20 hover:border-pink-500/50 transition-all duration-300 cursor-pointer"
             >
-              <span className="text-pink-400 text-sm font-medium">CREATE-A-THON HACKATHON →</span>
+              <span className="text-pink-400 text-sm font-medium">HACKATHON →</span>
             </button>
             <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
               Register for the Hackathon
             </h2>
             <p className="text-gray-300 text-lg">
-              Join the Create-A-Thon and collaborate with peers to design innovative AI products. Teams of 4-5 people will compete to build and present their projects to industry judges.
+              Join the Hackathon and collaborate with peers to design innovative AI products. Teams of 4-5 people will compete to build and present their projects to industry judges.
             </p>
           </div>
 
