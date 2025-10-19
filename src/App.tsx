@@ -62,16 +62,16 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
                 Home
               </button>
               <button
-                onClick={() => onNavigate('schedule')}
-                className="text-gray-400 hover:text-cyan-300 transition-colors font-medium"
-              >
-                Schedule
-              </button>
-              <button
                 onClick={() => onNavigate('hackathon')}
                 className="text-gray-400 hover:text-cyan-300 transition-colors font-medium"
               >
                 Hackathon
+              </button>
+              <button
+                onClick={() => onNavigate('schedule')}
+                className="text-gray-400 hover:text-cyan-300 transition-colors font-medium"
+              >
+                Schedule
               </button>
               <button
                 onClick={() => onNavigate('rsvp')}
@@ -183,7 +183,7 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Hands-On Innovation</h3>
                 <p className="text-gray-400">
-                  Collaborate in the Create-A-Thon hackathon to design and present creative projects that bring AI ideas to life through teamwork and problem-solving.
+                  Collaborate in the Hackathon to design and present creative projects that bring AI ideas to life through teamwork and problem-solving.
                 </p>
               </div>
             </div>
@@ -235,7 +235,7 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
                 <Users className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Create-A-Thon Hackathon</h3>
+                <h3 className="text-xl font-semibold mb-2">Hackathon</h3>
                 <p className="text-gray-400">
                   Collaborate with peers to design and present innovative AI products. Experience the full cycle of problem-solving, teamwork, and presentation, culminating in a showcase judged by industry professionals. Winners receive prizes.
                 </p>

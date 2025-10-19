@@ -69,7 +69,7 @@ function Schedule({ onNavigate }: ScheduleProps) {
       time: '2:30 PM - 3:15 PM',
       title: 'Daisy Workshop | Live Demo',
       location: 'UC Forum B',
-      description: 'Learn how to use Daisy. Required for Create-A-Thon participants',
+      description: 'Learn how to use Daisy. Required for Hackathon participants',
       type: 'workshop'
     },
     {
@@ -156,16 +156,16 @@ function Schedule({ onNavigate }: ScheduleProps) {
                 Home
               </button>
               <button
-                onClick={() => onNavigate('schedule')}
-                className="text-cyan-400 hover:text-cyan-300 transition-colors font-medium"
-              >
-                Schedule
-              </button>
-              <button
                 onClick={() => onNavigate('hackathon')}
                 className="text-gray-400 hover:text-cyan-300 transition-colors font-medium"
               >
                 Hackathon
+              </button>
+              <button
+                onClick={() => onNavigate('schedule')}
+                className="text-cyan-400 hover:text-cyan-300 transition-colors font-medium"
+              >
+                Schedule
               </button>
               <button
                 onClick={() => onNavigate('rsvp')}

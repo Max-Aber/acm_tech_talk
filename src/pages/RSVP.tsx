@@ -30,16 +30,16 @@ function RSVP({ onNavigate }: RSVPProps) {
                 Home
               </button>
               <button
-                onClick={() => onNavigate('schedule')}
-                className="text-gray-400 hover:text-cyan-300 transition-colors font-medium"
-              >
-                Schedule
-              </button>
-              <button
                 onClick={() => onNavigate('hackathon')}
                 className="text-gray-400 hover:text-cyan-300 transition-colors font-medium"
               >
                 Hackathon
+              </button>
+              <button
+                onClick={() => onNavigate('schedule')}
+                className="text-gray-400 hover:text-cyan-300 transition-colors font-medium"
+              >
+                Schedule
               </button>
               <button
                 onClick={() => onNavigate('rsvp')}
@@ -101,7 +101,19 @@ function RSVP({ onNavigate }: RSVPProps) {
           </ul>
         </div>
 
-        <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-lg border border-cyan-500/20 rounded-3xl p-10 mb-8">
+        <div className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-lg border border-cyan-500/30 rounded-3xl p-10 mb-8">
+          <div className="border-b border-cyan-500/20 pb-6 mb-8">
+            <div className="inline-block mb-4 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full">
+              <span className="text-cyan-400 text-sm font-medium">TECH TALK</span>
+            </div>
+            <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+              Register for the Tech Talk
+            </h2>
+            <p className="text-gray-300 text-lg">
+              Join us for expert panel discussions, workshops, and networking opportunities with AI industry professionals and startup founders.
+            </p>
+          </div>
+
           <div className="space-y-6 mb-8">
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
@@ -135,12 +147,7 @@ function RSVP({ onNavigate }: RSVPProps) {
             </div>
           </div>
 
-          <div className="border-t border-gray-700/50 pt-8">
-            <h2 className="text-2xl font-bold mb-4 text-white">Complete Your Registration</h2>
-            <p className="text-gray-400 mb-6">
-              Click the button below to access our registration form. Please provide your details to reserve your seat.
-            </p>
-
+          <div className="border-t border-cyan-500/20 pt-8">
             <a
               href="https://forms.gle/zSdMSTRqJQPd3SZXA"
               target="_blank"
@@ -151,9 +158,15 @@ function RSVP({ onNavigate }: RSVPProps) {
               <ExternalLink className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </a>
 
-            <p className="mt-4 text-sm text-gray-500">
+            <p className="mt-4 text-sm text-gray-400">
               You'll be redirected to our registration form
             </p>
+
+            <div className="mt-6 p-4 bg-cyan-900/20 border border-cyan-500/30 rounded-lg">
+              <p className="text-sm text-gray-300">
+                <strong className="text-cyan-400">Note:</strong> This registration is for the Tech Talk only. To participate in the Hackathon, you must register separately below.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -168,9 +181,14 @@ function RSVP({ onNavigate }: RSVPProps) {
             <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
               Register for the Hackathon
             </h2>
-            <p className="text-gray-300 text-lg">
+            <p className="text-gray-300 text-lg mb-4">
               Join the Hackathon and collaborate with peers to design innovative AI products. Teams of 4-5 people will compete to build and present their projects to industry judges.
             </p>
+            <div className="flex items-center gap-2 text-gray-300">
+              <Clock className="w-5 h-5 text-pink-400" />
+              <span className="font-semibold">Time:</span>
+              <span>1:45 PM - 7:30 PM</span>
+            </div>
           </div>
 
           <div className="space-y-6">

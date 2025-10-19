@@ -30,16 +30,16 @@ function Hackathon({ onNavigate }: HackathonProps) {
                 Home
               </button>
               <button
-                onClick={() => onNavigate('schedule')}
-                className="text-gray-400 hover:text-cyan-300 transition-colors font-medium"
-              >
-                Schedule
-              </button>
-              <button
                 onClick={() => onNavigate('hackathon')}
                 className="text-cyan-400 hover:text-cyan-300 transition-colors font-medium"
               >
                 Hackathon
+              </button>
+              <button
+                onClick={() => onNavigate('schedule')}
+                className="text-gray-400 hover:text-cyan-300 transition-colors font-medium"
+              >
+                Schedule
               </button>
               <button
                 onClick={() => onNavigate('rsvp')}
@@ -63,7 +63,7 @@ function Hackathon({ onNavigate }: HackathonProps) {
 
         <div className="mb-20 text-center">
           <div className="inline-block mb-6 px-4 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full">
-            <span className="text-cyan-400 text-sm font-medium">CREATE-A-THON</span>
+            <span className="text-cyan-400 text-sm font-medium">HACKATHON</span>
           </div>
 
           <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
@@ -73,7 +73,7 @@ function Hackathon({ onNavigate }: HackathonProps) {
           </h1>
 
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Join the Create-A-Thon and collaborate with peers to design and present innovative AI products. Experience the full cycle of problem-solving, teamwork, and presentation.
+            Join the Hackathon and collaborate with peers to design and present innovative AI products. Experience the full cycle of problem-solving, teamwork, and presentation.
           </p>
         </div>
 
@@ -102,11 +102,11 @@ function Hackathon({ onNavigate }: HackathonProps) {
 
         <div className="bg-gradient-to-br from-gray-800/30 to-gray-900/30 backdrop-blur-lg border border-cyan-500/20 rounded-3xl p-12 mb-12">
           <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-            About the Create-A-Thon
+            About the Hackathon
           </h2>
           <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
             <p>
-              The Create-A-Thon is a collaborative hackathon where teams of 4-5 people work together to design and build innovative AI-powered products. This isn't about writing perfect code - it's about creativity, teamwork, and bringing ideas to life.
+              The Hackathon is a collaborative event where teams of 4-5 people work together to design and build innovative AI-powered products. This isn't about writing perfect code - it's about creativity, teamwork, and bringing ideas to life.
             </p>
             <p>
               Before the hackathon begins, you'll participate in required workshops on Vibe Coding and Daisy.so to learn the tools you'll use. At 3:30 PM, we'll release the prompt, and your team will have 2 hours to create something amazing.
