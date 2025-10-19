@@ -225,7 +225,7 @@ function RSVP({ onNavigate }: RSVPProps) {
 
           <div className="mt-8 pt-8 border-t border-pink-500/20">
             <a
-              href="https://forms.gle/zSdMSTRqJQPd3SZXA"
+              href="https://forms.gle/H8Vke5xjSZA9D1HHA"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-pink-500 to-purple-500 rounded-xl text-lg font-semibold hover:from-pink-400 hover:to-purple-400 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(236,72,153,0.4)]"
