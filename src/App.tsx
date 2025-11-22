@@ -124,7 +124,7 @@ function HomePage({ onNavigate }: { onNavigate: (page: Page) => void }) {
             <Users className="w-10 h-10 text-cyan-400 mb-4" />
             <h3 className="text-lg font-semibold mb-2">Capacity</h3>
             <p className="text-gray-400">Limited to 100 attendees</p>
-            <p className="text-cyan-400 font-medium">51 spots remaining</p>
+            <p className="text-cyan-400 font-medium">41 spots remaining</p>
           </div>
         </div>
 
